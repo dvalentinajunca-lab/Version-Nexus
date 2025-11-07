@@ -1,4 +1,4 @@
-// src/services/api.js
+
 const API_BASE = "https://mock.apidog.com/m1/1118578-1109675-default";
 
 export async function getBooks() {
@@ -23,7 +23,6 @@ export async function getBookById(id) {
     return null;
   }
 }
-
 
 
 export async function searchBooks(filters = {}) {
