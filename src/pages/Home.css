@@ -1,0 +1,52 @@
+.home-container {
+  padding: 20px;
+  color: var(--text-color);
+}
+
+/* Carrusel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.019);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+/* Libros destacados */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.book-card {
+  background-color: var(--card-bg, #fff);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  margin: 10px 0 5px;
+}
+
+.book-card p {
+  color: #666;
+}

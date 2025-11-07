@@ -1,0 +1,42 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.filters input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.filters .buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filters button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #6c63ff;
+  color: white;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background-color: #5848d3;
+}
+
+.filters select {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 180px;
+}
