@@ -26,13 +26,13 @@ function Login() {
         <form onSubmit={handleSubmit}>
           <input
             type="email"
-            placeholder="Correo"
+            placeholder="admin@nexus.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
-            placeholder="Contraseña"
+            placeholder="123456"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
