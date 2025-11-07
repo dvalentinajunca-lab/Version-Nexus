@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Contacto.css";
 
 function Contacto() {
-  // Estados del formulario
   const [formData, setFormData] = useState({
     nombre: "",
     correo: "",
@@ -10,27 +9,21 @@ function Contacto() {
   });
 
   const [enviado, setEnviado] = useState(false);
-
-  // Manejar cambios en los inputs
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Manejar el envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Formulario enviado:", formData);
     setEnviado(true);
 
-    // Limpiar el formulario
     setFormData({ nombre: "", correo: "", mensaje: "" });
 
-    // Ocultar el mensaje después de 3 segundos
     setTimeout(() => setEnviado(false), 3000);
   };
 
-  // Simulación con useEffect (ejemplo de hook adicional)
   useEffect(() => {
     document.title = "Contacto - Nexus Librería";
   }, []);
@@ -39,7 +32,6 @@ function Contacto() {
     <div className="contacto-container">
       <h2>📞 Contáctanos</h2>
 
-      {/* Información de contacto */}
       <section className="contact-info">
         <h3>Información básica de contacto</h3>
         <p><strong>Dirección:</strong> Madrid, España</p>
@@ -51,7 +43,7 @@ function Contacto() {
         </p>
       </section>
 
-      {/* Formulario */}
+
       <section className="contact-form">
         <h3>Formulario de contacto</h3>
         <form onSubmit={handleSubmit}>
@@ -85,7 +77,7 @@ function Contacto() {
         {enviado && <p className="mensaje-exito">✅ Mensaje enviado con éxito</p>}
       </section>
 
-      {/* Mapa */}
+
       <section className="contact-map">
         <h3>Ubicación</h3>
         <iframe
