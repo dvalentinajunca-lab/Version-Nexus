@@ -12,7 +12,6 @@ function Libros() {
     category: "",
   });
 
-  // Cargar libros y categorías al inicio
   useEffect(() => {
     getBooks().then(setBooks);
     getCategories().then(setCategories);
@@ -102,7 +101,7 @@ function Libros() {
             </div>
           ))
         ) : (
-          <p>No se encontraron libros.</p>
+          <p>Cargando libros.</p>
         )}
       </div>
     </div>

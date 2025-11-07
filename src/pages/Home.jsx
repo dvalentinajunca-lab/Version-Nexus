@@ -3,7 +3,6 @@ import { getBooks } from "../services/api";
 
 import "./Home.css";
 
-// Imágenes locales desde assets
 import banner1 from "../assets/BANNER-1.jpg";
 import banner2 from "../assets/BANNER-2-.jpg";
 import banner3 from "../assets/BANNER-3-.jpg";
@@ -15,8 +14,8 @@ function Home() {
     const fetchBooks = async () => {
       try {
         const data = await getBooks();
-        console.log("Libros obtenidos:", data); // 👈 te mostrará en consola qué llega
-        setBooks(data.slice(0, 3)); // Mostrar 3 libros destacados
+        console.log("Libros obtenidos:", data); 
+        setBooks(data.slice(0, 3)); 
       } catch (error) {
         console.error("Error al obtener libros:", error);
       }
@@ -26,7 +25,7 @@ function Home() {
 
   return (
     <div className="home-container">
-      {/* Carrusel Bootstrap */}
+
       <div id="carouselExample" className="carousel slide mb-5" data-bs-ride="carousel">
         <div className="carousel-inner rounded shadow">
           <div className="carousel-item active">
@@ -62,7 +61,7 @@ function Home() {
         </button>
       </div>
 
-      {/* Libros destacados */}
+
       <div className="books-section text-center">
         <h2>📘 Libros destacados</h2>
         <div className="books-grid">

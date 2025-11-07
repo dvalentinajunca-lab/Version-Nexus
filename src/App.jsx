@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useUser } from "./context/UserContext";
 import Home from "./pages/Home";

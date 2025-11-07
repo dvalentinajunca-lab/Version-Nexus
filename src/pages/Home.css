@@ -3,7 +3,7 @@
   color: var(--text-color);
 }
 
-/* Carrusel */
+
 .carousel-item img {
   height: 500px;
   object-fit: cover;
@@ -15,7 +15,7 @@
   padding: 10px 20px;
 }
 
-/* Libros destacados */
+
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

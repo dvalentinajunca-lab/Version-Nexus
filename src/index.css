@@ -4,13 +4,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 🌞 Modo claro */
 body.light-mode {
   background-color: #f5f5f5;
   color: #222;
 }
 
-/* 🌙 Modo oscuro */
 body.dark-mode {
   background-color: #121212;
   color: #f5f5f5;
@@ -35,7 +33,6 @@ body.dark-mode {
   padding: 2rem;
 }
 
-/* Tarjetas de libros */
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
