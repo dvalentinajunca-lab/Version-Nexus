@@ -8,6 +8,12 @@ export const useDarkMode = () => {
 
   useEffect(() => {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
+    // 👉 Aquí es donde haces visible el cambio:
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
   }, [darkMode]);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
